@@ -14,7 +14,8 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $comics = Comic::all();
+        dd($comics);
     }
 
     /**
@@ -42,11 +43,12 @@ class ComicController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Comic  $comic
+     * 
      * @return \Illuminate\Http\Response
      */
     public function show(Comic $comic)
     {
-        //
+        dd($comic);
     }
 
     /**
